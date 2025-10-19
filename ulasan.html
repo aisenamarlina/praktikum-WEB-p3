@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ulasan Pelanggan</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fadeInUp {
+      opacity: 0;
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    .delay-1 { animation-delay: 0.2s; }
+    .delay-2 { animation-delay: 0.4s; }
+    .delay-3 { animation-delay: 0.6s; }
+    .delay-4 { animation-delay: 0.8s; }
+
+    .card:hover {
+      transform: scale(1.03);
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+
+<body class="bg-white dark:bg-gray-900">
+  <header>
+    <nav class="flex flex-col lg:flex-row justify-between px-4 py-3">
+      <a class="text-red-600 text-3xl font-bold">TokoMe</a>
+      <div class="flex flex-row justify-start items-center gap-4">
+        <a href="/index.html">Beranda</a>
+        <a href="/produk.html">Produk</a>
+        <a href="/ulasan.html" class="text-red-600 font-semibold">Ulasan</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="max-w-screen-xl mx-auto my-10 px-6">
+    <h1 class="text-center text-4xl text-gray-700 font-bold mb-8">Ulasan Pelanggan Kami</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Ulasan 1 -->
+      <div class="card bg-red-700 text-white rounded-xl p-5 animate-fadeInUp delay-1">
+        <div class="flex items-center mb-4">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User 1" class="w-14 h-14 rounded-full mr-4">
+          <div>
+            <p class="font-bold">Rina Andriani</p>
+            <p class="text-yellow-300 text-sm">★★★★★</p>
+          </div>
+        </div>
+        <p class="text-sm leading-relaxed">
+          Kue dari <span class="font-semibold text-yellow-300">TokoMe</span> rasanya enak banget!  
+          Saya pesan kue brownies dan dodol Garut untuk acara keluarga, semua orang suka!  
+          Pengemasannya juga rapi dan wangi.
+        </p>
+      </div>
+
+      <!-- Ulasan 2 -->
+      <div class="card bg-red-700 text-white rounded-xl p-5 animate-fadeInUp delay-2">
+        <div class="flex items-center mb-4">
+          <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="User 2" class="w-14 h-14 rounded-full mr-4">
+          <div>
+            <p class="font-bold">Dimas Pratama</p>
+            <p class="text-yellow-300 text-sm">★★★★☆</p>
+          </div>
+        </div>
+        <p class="text-sm leading-relaxed">
+          Produk cepat sampai dan masih segar!  
+          Saya suka varian rasa modernnya, cocok buat anak muda.  
+          Mungkin bisa ditambah varian rasa baru lagi biar lebih menarik.
+        </p>
+      </div>
+
+      <!-- Ulasan 3 -->
+      <div class="card bg-red-700 text-white rounded-xl p-5 animate-fadeInUp delay-3">
+        <div class="flex items-center mb-4">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User 3" class="w-14 h-14 rounded-full mr-4">
+          <div>
+            <p class="font-bold">Siti Rahmah</p>
+            <p class="text-yellow-300 text-sm">★★★★★</p>
+          </div>
+        </div>
+        <p class="text-sm leading-relaxed">
+          Saya sudah langganan beli di <span class="font-semibold text-yellow-300">TokoMe</span>.  
+          Rasanya konsisten enak, dan pelayanannya ramah banget.  
+          Cocok dijadikan oleh-oleh khas Garut.
+        </p>
+      </div>
+
+      <!-- Ulasan 4 -->
+      <div class="card bg-red-700 text-white rounded-xl p-5 animate-fadeInUp delay-4">
+        <div class="flex items-center mb-4">
+          <img src="https://randomuser.me/api/portraits/men/91.jpg" alt="User 4" class="w-14 h-14 rounded-full mr-4">
+          <div>
+            <p class="font-bold">Fajar Nugraha</p>
+            <p class="text-yellow-300 text-sm">★★★★★</p>
+          </div>
+        </div>
+        <p class="text-sm leading-relaxed">
+          Keren banget! Website-nya mudah digunakan,  
+          tampilan produk menarik, dan pengiriman super cepat.  
+          Pasti saya rekomendasikan ke teman-teman.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-white py-6 mt-10 bg-red-600">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 px-6">
+      <div>
+        <h5 class="text-2xl font-bold">Toko Terpercaya</h5>
+        <p class="text-sm">Kue tradisional khas Garut dengan rasa modern.</p>
+      </div>
+      <div>
+        <h5 class="text-2xl font-bold">Navigasi</h5>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a href="/index.html">Beranda</a></li>
+          <li><a href="/produk.html">Produk</a></li>
+          <li><a href="/ulasan.html">Ulasan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-2xl font-bold">Hubungi Kami</h5>
+        <ul class="text-sm">
+          <li>0862-7352-3879</li>
+          <li>Jl. Cempaka, Garut, Jawa Barat</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

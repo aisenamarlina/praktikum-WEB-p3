@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produk Unggulan</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    /* Animasi muncul dari bawah */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fadeInUp {
+      opacity: 0;
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    /* Delay untuk tiap produk agar muncul bertahap */
+    .delay-1 { animation-delay: 0.2s; }
+    .delay-2 { animation-delay: 0.4s; }
+    .delay-3 { animation-delay: 0.6s; }
+    .delay-4 { animation-delay: 0.8s; }
+    .delay-5 { animation-delay: 1s; }
+    .delay-6 { animation-delay: 1.2s; }
+    .delay-7 { animation-delay: 1.4s; }
+    .delay-8 { animation-delay: 1.6s; }
+
+    /* Efek hover biar lebih hidup */
+    .produk:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+</head>
+
+<body class="bg-white dark:bg-gray-900">
+  <header>
+    <nav class="flex flex-col lg:flex-row justify-between px-4 py-3">
+      <a class="text-red-600 text-3xl font-bold">TokoMe</a>
+      <div class="flex flex-row justify-start items-center gap-4">
+        <a href="/index.html">Beranda</a>
+        <a href="/produk.html" class="text-red-600 font-semibold">Produk</a>
+        <a href="/ulasan.html">Ulasan</a>
+      </div>
+    </nav>
+  </header>
+
+  <h1 class="text-center text-4xl text-gray-700 my-6 font-bold">Daftar Produk Unggulan</h1>
+
+  <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 px-6 text-gray-800 justify-center">
+    <div class="produk bg-red-700 text-white rounded-xl p-2 flex flex-col items-center animate-fadeInUp delay-1">
+      <img src="https://img.cake24x7.com/writable/apps/cake24x7/ProductGallery/5999/Luxury-pink-Bento-Cake.jpg" alt="Produk 01" class="rounded-lg mb-2">
+      <p class="font-semibold">Produk 01</p>
+      <p class="text-yellow-300 font-bold">Rp30.000</p>
+    </div>
+
+    <div class="produk bg-red-700 text-white rounded-xl p-2 flex flex-col items-center animate-fadeInUp delay-2">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.enpu28I3KK_-x0zLnEP8dgHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Produk 02" class="rounded-lg mb-2">
+      <p class="font-semibold">Produk 02</p>
+      <p class="text-yellow-300 font-bold">Rp35.000</p>
+    </div>
+
+    <div class="produk bg-red-700 text-white rounded-xl p-2 flex flex-col items-center animate-fadeInUp delay-3">
+      <img src="https://jpetitepatisserie.com/cdn/shop/files/FloralSprinklesKoreanCake.jpg?v=1690091623&width=1946" alt="Produk 03" class="rounded-lg mb-2">
+      <p class="font-semibold">Produk 03</p>
+      <p class="text-yellow-300 font-bold">Rp40.000</p>
+    </div>
+
+    <div class="produk bg-red-700 text-white rounded-xl p-2 flex flex-col items-center animate-fadeInUp delay-4">
+      <img src="https://th.bing.com/th/id/R.5d321c423e4b403611b34f4aed234eb7?rik=GPAfv6yRfOQ1Aw&riu=http%3a%2f%2fimg-global.cpcdn.com%2frecipes%2fa16fc8430598d028%2f400x400cq70%2fphoto.jpg&ehk=CP532JCVVT4lMa2OTpwgH4tY0jsGvzSJ6gQT4KPO7TI%3d&risl=&pid=ImgRaw&r=0" alt="Produk 04" class="rounded-lg mb-2">
+      <p class="font-semibold">Produk 04</p>
+      <p class="text-yellow-300 font-bold">Rp80.000</p>
+    </div>
+
+    <div class="produk bg-red-700 text-white rounded-xl p-2 flex flex-col items-center animate-fadeInUp delay-5">
+      <img src="https://cf.shopee.co.id/file/b2fa35ad063f6f6707ec92972d9c66f4" alt="Produk 05" class="rounded-lg mb-2">
+      <p class="font-semibold">Produk 05</p>
+      <p class="text-yellow-300 font-bold">Rp45.000</p>
+    </div>
+
+    <div class="produk bg-red-700 text-white rounded-xl p-2 flex flex-col items-center animate-fadeInUp delay-6">
+      <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98u-lo2oybwi8fb0e1" alt="Produk 06" class="rounded-lg mb-2">
+      <p class="font-semibold">Produk 06</p>
+      <p class="text-yellow-300 font-bold">Rp55.000</p>
+    </div>
+
+    <div class="produk bg-red-700 text-white rounded-xl p-2 flex flex-col items-center animate-fadeInUp delay-7">
+      <img src="https://64.media.tumblr.com/0392eeb3b979c813a7fa88f4e30e6048/18ec190470c2f762-98/s1280x1920/fc0d334a014d60694d2ae92577558b6d184b2321.jpg" alt="Produk 07" class="rounded-lg mb-2">
+      <p class="font-semibold">Produk 07</p>
+      <p class="text-yellow-300 font-bold">Rp60.000</p>
+    </div>
+
+    <div class="produk bg-red-700 text-white rounded-xl p-2 flex flex-col items-center animate-fadeInUp delay-8">
+      <img src="https://farm2.staticflickr.com/1561/26350373062_11e64cc122_b.jpg" alt="Produk 08" class="rounded-lg mb-2">
+      <p class="font-semibold">Produk 08</p>
+      <p class="text-yellow-300 font-bold">Rp75.000</p>
+    </div>
+  </div>
+    <footer class="text-white py-6 mt-10 bg-red-600">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 px-6">
+      <div>
+        <h5 class="text-2xl font-bold">Toko Terpercaya</h5>
+        <p class="text-sm">Kue tradisional khas Garut dengan rasa modern.</p>
+      </div>
+      <div>
+        <h5 class="text-2xl font-bold">Navigasi</h5>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a href="/index.html">Beranda</a></li>
+          <li><a href="/produk.html">Produk</a></li>
+          <li><a href="/ulasan.html">Ulasan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-2xl font-bold">Hubungi Kami</h5>
+        <ul class="text-sm">
+          <li>📞 0862-7352-3879</li>
+          <li>📍 Jl. Cempaka, Garut, Jawa Barat</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
